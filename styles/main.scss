@@ -1,0 +1,138 @@
+@import "reset";
+@import "_variables";
+* {
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+body {
+	height: 100vh;
+}
+aside {
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	width: 33%;
+	background-color: #f0f0f0;
+	h1 {
+		padding-left: 73px;
+		padding-top: 93px;
+		text-transform: uppercase;
+		color: $red;
+		font-size: 80px;
+		width: 30%;
+		letter-spacing: 1.2px;
+		line-height: 1.1;
+		font-weight: 700;
+	}
+	.content {
+		width: 80%;
+		padding: 73px;
+		.info {
+			color: $red;
+			font-size: 26px;
+			margin-bottom: 24px;
+			line-height: 1.2;
+		}
+		.coment {
+			color: $red;
+			margin-bottom: 27px;
+			font-size: 20px;
+			line-height: 1.2;
+		}
+	}
+	.bottom {
+		ul {
+			display: flex;
+			li {
+				font-size: 14px;
+				margin-right: 16px;
+				border-bottom: 2px solid black;
+				padding-bottom: 5px;
+				opacity: 0.5;
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+main {
+	background-color: #34495e;
+	margin-left: 33%;
+	header {
+		padding: 60px 144px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $white;
+		font-size: 33px;
+		h1 {
+			position: fixed;
+		}
+	}
+	.main__content {
+		padding: 108px 144px 98px;
+		background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.1) 5%,
+			transparent,
+			transparent,
+			transparent,
+			transparent
+		);
+		.wrapper {
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			.othani__header {
+				margin-bottom: 39px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				h4 {
+					color: $white;
+					font-size: 60px;
+					font-weight: 700;
+				}
+				h3 {
+					align-self: flex-end;
+					color: $white;
+					font-size: 20px;
+				}
+			}
+			img {
+				width: 990px;
+				height: 555px;
+				border-radius: 7px;
+				margin-bottom: 50px;
+				box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+					rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+					rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+			}
+			.othani__record {
+				color: $white;
+				text-align: end;
+				margin-bottom: 150px;
+				.record {
+					display: flex;
+					gap: 10px;
+					table {
+						width: 50%;
+						height: 100%;
+						text-align: center;
+
+						td {
+							border: 1px solid skyblue;
+							padding: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
