@@ -191,7 +191,10 @@ main {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 5%, transparent, transparent, transparent, transparent); }
     main .main__content .wrapper {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      opacity: 1;
+      transition: opacity 0.5s;
+      transition: 1500ms ease-in; }
       main .main__content .wrapper .othani__header {
         margin-bottom: 39px;
         display: flex;
