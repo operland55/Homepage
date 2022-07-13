@@ -45,7 +45,7 @@
     </header>
 
     <div class="main__content">
-      <div class="wrapper">
+      <div class="wrapper active">
         <div class="othani__header">
           <h4>2013~2022 Record</h4>
           <h3></h3>
@@ -1849,5 +1849,21 @@
 
         </div>
 </body>
+
+<script>
+  const wrappers = document.querySelectorAll('.wrapper')
+
+  const callback = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1'
+      } else {
+        entry.target.style.opacity = '0'
+      }
+    });
+  }
+  const observer = new IntersectionObserver(callback) 
+  wrappers.forEach(box => observer.observe(box))
+</script>    
 
 </html>
