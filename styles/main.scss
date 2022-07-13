@@ -8,6 +8,7 @@ body {
 	height: 100vh;
 }
 aside {
+	font-weight: 700;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -26,7 +27,6 @@ aside {
 		width: 30%;
 		letter-spacing: 1.2px;
 		line-height: 1.1;
-		font-weight: 700;
 	}
 	.content {
 		width: 80%;
@@ -139,13 +139,19 @@ main {
 // $phone: "only screen and (min-width : 769px)";
 @media (max-width: 700px) {
 	aside {
+		position: relative;
 		width: 100%;
-		position: static;
+		height: 70%;
+		justify-content: flex-start;
+
 		h1 {
+			padding-top: 66px;
+			padding-left: 36px;
 			font-size: 55px;
 		}
 		.content {
 			width: 100%;
+			padding: 36px;
 			.info {
 				font-size: 20px;
 			}
@@ -156,16 +162,18 @@ main {
 		}
 	}
 	main {
-		margin: 0;
+		margin: 0 auto;
 		header {
+			padding: 36px 48px;
 			h1 {
 				position: static;
 				color: $white;
-				font-size: 26px;
+				font-size: 20px;
 			}
 		}
 	}
 	.main__content {
+		width: 100%;
 		.wrapper {
 			.othani__header {
 				font-size: 10px;
@@ -175,13 +183,12 @@ main {
 				}
 			}
 			img {
-				min-height: 300px;
-				min-width: 300px;
+				height: 250px;
+				width: 300px;
+				margin: 0 auto;
 			}
 		}
 		.record {
-			gap: 0;
-			display: flex;
 			justify-content: center;
 		}
 	}
