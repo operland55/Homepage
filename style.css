@@ -199,15 +199,15 @@ main {
         align-items: center; }
         main .main__content .wrapper .othani__header h4 {
           color: #f0eff0;
-          font-size: 60px;
+          font-size: 4em;
           font-weight: 700; }
         main .main__content .wrapper .othani__header h3 {
           align-self: flex-end;
           color: #f0eff0;
-          font-size: 20px; }
+          font-size: 1.5em; }
       main .main__content .wrapper img {
-        width: 990px;
-        height: 555px;
+        max-width: 990px;
+        max-height: 555px;
         border-radius: 7px;
         margin-bottom: 50px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
@@ -225,5 +225,37 @@ main {
             main .main__content .wrapper .othani__record .record table td {
               border: 1px solid skyblue;
               padding: 5px; }
+
+@media (max-width: 700px) {
+  aside {
+    width: 100%;
+    position: static; }
+    aside h1 {
+      font-size: 55px; }
+    aside .content {
+      width: 100%; }
+      aside .content .info {
+        font-size: 20px; }
+      aside .content .coment {
+        font-size: 16px;
+        line-height: 1.4; }
+  main {
+    margin: 0; }
+    main header h1 {
+      position: static;
+      color: #f0eff0;
+      font-size: 26px; }
+  .main__content .wrapper .othani__header {
+    font-size: 10px;
+    margin: 0 auto; }
+    .main__content .wrapper .othani__header h3 {
+      display: none; }
+  .main__content .wrapper img {
+    min-height: 300px;
+    min-width: 300px; }
+  .main__content .record {
+    gap: 0;
+    display: flex;
+    justify-content: center; } }
 
 /*# sourceMappingURL=style.css.map */
