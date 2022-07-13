@@ -148,7 +148,7 @@ main {
 	aside {
 		position: relative;
 		width: 100%;
-		height: 70%;
+		height: 100%;
 		justify-content: flex-start;
 
 		h1 {
@@ -178,25 +178,38 @@ main {
 				font-size: 20px;
 			}
 		}
-	}
-	.main__content {
-		width: 100%;
-		.wrapper {
-			.othani__header {
-				font-size: 10px;
-				margin: 0 auto;
-				h3 {
-					display: none;
+		.main__content {
+			padding: 32px;
+			.wrapper {
+				.othani__header {
+					font-size: 7px;
+					display: block;
+					margin: 0 auto;
+					h4 {
+						margin-bottom: 24px;
+					}
+					h3 {
+						display: none;
+					}
+				}
+				img {
+					height: 250px;
+					width: 300px;
+					margin-bottom: 24px;
+				}
+				.othani__record {
+					.record {
+						justify-content: center;
+						// margin-right: 15px;
+						gap: 1.5px;
+						table {
+							td {
+								padding: 2px;
+							}
+						}
+					}
 				}
 			}
-			img {
-				height: 250px;
-				width: 300px;
-				margin: 0 auto;
-			}
-		}
-		.record {
-			justify-content: center;
 		}
 	}
 }
