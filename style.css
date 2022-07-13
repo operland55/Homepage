@@ -145,7 +145,7 @@ aside {
     padding-top: 93px;
     text-transform: uppercase;
     color: #e7473c;
-    font-size: 80px;
+    font-size: 60px;
     width: 30%;
     letter-spacing: 1.2px;
     line-height: 1.1; }
@@ -154,13 +154,13 @@ aside {
     padding: 73px; }
     aside .content .info {
       color: #e7473c;
-      font-size: 26px;
+      font-size: 24px;
       margin-bottom: 24px;
       line-height: 1.2; }
     aside .content .coment {
       color: #e7473c;
       margin-bottom: 27px;
-      font-size: 20px;
+      font-size: 19px;
       line-height: 1.2; }
   aside .bottom ul {
     display: flex; }
@@ -268,11 +268,13 @@ main {
       main .main__content .wrapper img {
         height: 250px;
         width: 300px;
-        margin-bottom: 24px; }
-      main .main__content .wrapper .othani__record .record {
-        justify-content: center;
-        gap: 1.5px; }
-        main .main__content .wrapper .othani__record .record table td {
-          padding: 2px; } }
+        margin: 0 auto; }
+      main .main__content .wrapper .othani__record {
+        margin-top: 20px; }
+        main .main__content .wrapper .othani__record .record {
+          justify-content: center;
+          gap: 1.5px; }
+          main .main__content .wrapper .othani__record .record table td {
+            padding: 2px; } }
 
 /*# sourceMappingURL=style.css.map */

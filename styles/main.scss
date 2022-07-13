@@ -23,7 +23,7 @@ aside {
 		padding-top: 93px;
 		text-transform: uppercase;
 		color: $red;
-		font-size: 80px;
+		font-size: 60px;
 		width: 30%;
 		letter-spacing: 1.2px;
 		line-height: 1.1;
@@ -33,14 +33,14 @@ aside {
 		padding: 73px;
 		.info {
 			color: $red;
-			font-size: 26px;
+			font-size: 24px;
 			margin-bottom: 24px;
 			line-height: 1.2;
 		}
 		.coment {
 			color: $red;
 			margin-bottom: 27px;
-			font-size: 20px;
+			font-size: 19px;
 			line-height: 1.2;
 		}
 	}
@@ -195,9 +195,10 @@ main {
 				img {
 					height: 250px;
 					width: 300px;
-					margin-bottom: 24px;
+					margin: 0 auto;
 				}
 				.othani__record {
+					margin-top: 20px;
 					.record {
 						justify-content: center;
 						// margin-right: 15px;
